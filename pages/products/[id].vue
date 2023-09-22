@@ -2,10 +2,8 @@
 <!-- capture id with the use route composable function -->
 <template>
   <div>
-    <p>Product details for {{ id }}</p>
-    <p>{{ product.title }}</p>
-    <p>{{ product.price }}</p>
-    <p>{{ product.id }}</p>
+    <!-- <p>Product details for {{ id }}</p> -->
+    <ProductDetails :product="product" />
   </div>
 </template>
 
