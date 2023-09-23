@@ -2,6 +2,12 @@
 <!-- capture id with the use route composable function -->
 <template>
   <div>
+    <!-- browser tab title & meta tags with product info-->
+    <Head>
+      <Title>Nuxt | {{ product.title }}</Title>
+      <Meta name="description" :content="product.description" />
+    </Head>
+
     <!-- <p>Product details for {{ id }}</p> -->
     <ProductDetails :product="product" />
   </div>

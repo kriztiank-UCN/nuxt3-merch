@@ -14,3 +14,13 @@
     margin: 20px 0;
   }
 </style>
+
+<script setup>
+// browser tab title & meta tags (overwrites the global ones in nuxt.config.js)
+useHead({
+    title: 'Nuxt | About',
+    meta: [
+      { name: 'description', content: 'About Nuxt Merch'}
+    ]
+  })
+</script>

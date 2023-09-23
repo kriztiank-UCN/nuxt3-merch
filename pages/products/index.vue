@@ -13,8 +13,15 @@
 <script setup>
 //  fetch the products
 const { data: products } = await useFetch('https://fakestoreapi.com/products')
-// nuxt composable function
+// custom layout for the products folder/route, points to layouts/products.vue
 definePageMeta({
   layout: 'products',
 })
+// browser tab title & meta tags (overwrites the global ones in nuxt.config.js)
+useHead({
+    title: 'Nuxt | Products',
+    meta: [
+      { name: 'description', content: 'Nuxt 3 Merch'}
+    ]
+  })
 </script>
