@@ -24,7 +24,7 @@ export default defineEventHandler(async (event)  => {
 
   // api call with private key (use $fetch on server routes)
   const { data } = await $fetch(
-    'https://api.currencyapi.com/v3/latest?apikey=cur_live_hldr1H6Li1xoGKzgyFx7qmMUB0oWH37LIsxPhXuQ'
+    // sensitive data API key removed
   )
 
   return data
